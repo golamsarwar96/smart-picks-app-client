@@ -4,18 +4,21 @@ import { AuthContext } from "../../provider/AuthProvider";
 import toast from "react-hot-toast";
 
 const Register = () => {
-  const { userRegister, setUser } = useContext(AuthContext);
+  const { userRegister, setUser, updateUserProfile } = useContext(AuthContext);
   const handleRegister = async (e) => {
     e.preventDefault();
     const form = e.target;
+    const name = form.name.value;
     const email = form.email.value;
     const password = form.password.value;
+    const photo = form.photo.value;
     console.log(email, password);
 
     try {
       const result = await userRegister(email, password);
       console.log(result);
-      setUser(result.user);
+      await updateUserProfile(name, photo);
+      setUser({ ...result.user, photoURL: photo, displayName: name });
       toast.success("Successfully Created User");
     } catch (err) {
       console.log(err);
@@ -31,9 +34,33 @@ const Register = () => {
               <span className="label-text">Email</span>
             </label>
             <input
+              type="text"
+              placeholder="Your Name"
+              name="name"
+              className="input input-bordered"
+              required
+            />
+          </div>
+          <div className="form-control">
+            <label className="label">
+              <span className="label-text">Email</span>
+            </label>
+            <input
               type="email"
               placeholder="email"
               name="email"
+              className="input input-bordered"
+              required
+            />
+          </div>
+          <div className="form-control">
+            <label className="label">
+              <span className="label-text">Email</span>
+            </label>
+            <input
+              type="url"
+              placeholder="Photo URL"
+              name="photo"
               className="input input-bordered"
               required
             />

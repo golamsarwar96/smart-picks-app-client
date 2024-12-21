@@ -61,6 +61,8 @@ const Navbar = () => {
           Logout
         </button>
         <p>{user?.email}</p>
+        <p>{user?.displayName}</p>
+        <img src={user?.photoURL} />
       </div>
     </div>
   );
