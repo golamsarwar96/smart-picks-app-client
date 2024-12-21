@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { useContext } from "react";
 import { AuthContext } from "../../provider/AuthProvider";
 
@@ -54,7 +54,9 @@ const Navbar = () => {
         <ul className="menu menu-horizontal px-1">{links}</ul>
       </div>
       <div className="navbar-end">
-        <a className="btn hover:bg-black hover:text-white">{name}</a>
+        <Link to="/login" className="btn hover:bg-black hover:text-white">
+          Login
+        </Link>
       </div>
     </div>
   );

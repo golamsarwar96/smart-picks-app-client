@@ -6,6 +6,8 @@ import Queries from "../pages/Queries";
 import MyQueries from "../pages/MyQueries";
 import Recommendations from "../pages/Recommendations";
 import MyRecommendations from "../pages/MyRecommendations";
+import Login from "../pages/authentication/Login";
+import Register from "../pages/authentication/Register";
 
 const router = createBrowserRouter([
   {
@@ -35,6 +37,14 @@ const router = createBrowserRouter([
       {
         path: "my-recommendations",
         element: <MyRecommendations></MyRecommendations>,
+      },
+      {
+        path: "login",
+        element: <Login></Login>,
+      },
+      {
+        path: "register",
+        element: <Register></Register>,
       },
     ],
   },
