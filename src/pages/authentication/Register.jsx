@@ -1,23 +1,26 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../provider/AuthProvider";
+import toast from "react-hot-toast";
 
 const Register = () => {
-  const { userRegister } = useContext(AuthContext);
-  const handleRegister = (e) => {
+  const { userRegister, setUser } = useContext(AuthContext);
+  const handleRegister = async (e) => {
     e.preventDefault();
     const form = e.target;
     const email = form.email.value;
     const password = form.password.value;
     console.log(email, password);
 
-    userRegister(email, password)
-      .then((result) => {
-        console.log(result);
-      })
-      .catch((error) => {
-        console.error(error);
-      });
+    try {
+      const result = await userRegister(email, password);
+      console.log(result);
+      setUser(result.user);
+      toast.success("Successfully Created User");
+    } catch (err) {
+      console.log(err);
+      toast.error(err.message);
+    }
   };
   return (
     <div>

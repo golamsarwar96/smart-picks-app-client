@@ -3,8 +3,8 @@ import { useContext } from "react";
 import { AuthContext } from "../../provider/AuthProvider";
 
 const Navbar = () => {
-  const { name } = useContext(AuthContext);
-  console.log(name);
+  const { logOut, user } = useContext(AuthContext);
+  console.log(user);
   const links = (
     <div className="flex gap-2 items-center">
       <NavLink className="flex gap-3 p-3 bg-cyan-400  border-none rounded-xl lg:items-center flex-col lg:flex-row  text-white z-10">
@@ -57,6 +57,10 @@ const Navbar = () => {
         <Link to="/login" className="btn hover:bg-black hover:text-white">
           Login
         </Link>
+        <button className="btn" onClick={logOut}>
+          Logout
+        </button>
+        <p>{user?.email}</p>
       </div>
     </div>
   );

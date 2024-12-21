@@ -1,7 +1,24 @@
+import { useContext } from "react";
+import { AuthContext } from "../../provider/AuthProvider";
+import toast from "react-hot-toast";
+
 const Login = () => {
+  const { userSignIn } = useContext(AuthContext);
   const handleLogin = async (e) => {
     e.preventDefault();
     const form = e.target;
+    const email = form.email.value;
+    const password = form.password.value;
+    console.log(email, password);
+
+    try {
+      const result = await userSignIn(email, password);
+      console.log(result);
+      toast.success("SUCCESSFULLY LOGGED IN");
+    } catch (err) {
+      console.log(err);
+      toast.error(err.message);
+    }
   };
   return (
     <div>
@@ -14,6 +31,7 @@ const Login = () => {
             <input
               type="email"
               placeholder="email"
+              name="email"
               className="input input-bordered"
               required
             />
@@ -25,6 +43,7 @@ const Login = () => {
             <input
               type="password"
               placeholder="password"
+              name="password"
               className="input input-bordered"
               required
             />
