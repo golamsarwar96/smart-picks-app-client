@@ -7,6 +7,7 @@ export default {
         poppins: ["Poppins", "serif"],
         bebas: ["Bebas Neue", "serif"],
         logo: ["Caveat", "serif"],
+        jost: ["Jost", "serif"],
       },
     },
   },

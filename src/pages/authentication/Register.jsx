@@ -4,7 +4,8 @@ import { AuthContext } from "../../provider/AuthProvider";
 import toast from "react-hot-toast";
 
 const Register = () => {
-  const { userRegister, setUser, updateUserProfile } = useContext(AuthContext);
+  const { userRegister, setUser, updateUserProfile, signInWithGoogle } =
+    useContext(AuthContext);
   const handleRegister = async (e) => {
     e.preventDefault();
     const form = e.target;
@@ -24,6 +25,17 @@ const Register = () => {
       console.log(err);
       toast.error(err.message);
     }
+  };
+  const handleGoogleSignIn = () => {
+    signInWithGoogle()
+      .then((result) => {
+        console.log(result.user);
+        toast.success("Successful");
+      })
+      .catch((err) => {
+        console.log(err);
+        toast.error(err.message);
+      });
   };
   return (
     <div>
@@ -81,8 +93,11 @@ const Register = () => {
             <button className="btn btn-primary">Register</button>
           </div>
           <p>
-            ALredy have an account ? <Link to="/login">Login</Link>
+            Already have an account ? <Link to="/login">Login</Link>
           </p>
+          <button className="btn btn-primary" onClick={handleGoogleSignIn}>
+            Google Sign In
+          </button>
         </form>
       </div>
     </div>
