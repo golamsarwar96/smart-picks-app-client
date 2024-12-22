@@ -9,6 +9,11 @@ export default {
         logo: ["Caveat", "serif"],
         jost: ["Jost", "serif"],
       },
+      colors: {
+        primaryColor: "#25302c",
+        secondaryColor: "ffe7c4",
+        textColor: "#ffefd7",
+      },
     },
   },
   plugins: [require("daisyui")],

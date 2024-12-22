@@ -1,0 +1,74 @@
+[
+  {
+    "ProductName": "Wireless Bluetooth Headphones",
+    "ProductBrand": "AudioMax",
+    "ProductImageURL": "https://example.com/images/headphones.jpg",
+    "QueryTitle": "Is there any better wireless headphone with noise cancellation?",
+    "BoycottingReasonDetails": "The sound quality is not good, and the battery drains fast.",
+    "AddQueryButton": true
+  },
+  {
+    "ProductName": "4K LED TV",
+    "ProductBrand": "Visionary",
+    "ProductImageURL": "https://example.com/images/4k-tv.jpg",
+    "QueryTitle": "Are there other 4K TVs with better color accuracy?",
+    "BoycottingReasonDetails": "The picture quality is decent but lacks deep blacks and accurate colors.",
+    "AddQueryButton": true
+  },
+  {
+    "ProductName": "Gaming Laptop",
+    "ProductBrand": "XtremeTech",
+    "ProductImageURL": "https://example.com/images/gaming-laptop.jpg",
+    "QueryTitle": "Which gaming laptop has the best GPU performance under $1500?",
+    "BoycottingReasonDetails": "The laptop overheats under load, and the fan noise is annoying.",
+    "AddQueryButton": true
+  },
+  {
+    "ProductName": "Smartphone",
+    "ProductBrand": "SnapTech",
+    "ProductImageURL": "https://example.com/images/smartphone.jpg",
+    "QueryTitle": "Is there a better smartphone for camera performance at this price point?",
+    "BoycottingReasonDetails": "Battery life is short, and the camera quality is subpar compared to other brands.",
+    "AddQueryButton": true
+  },
+  {
+    "ProductName": "Electric Toothbrush",
+    "ProductBrand": "PureClean",
+    "ProductImageURL": "https://example.com/images/electric-toothbrush.jpg",
+    "QueryTitle": "Are there any electric toothbrushes with better battery life?",
+    "BoycottingReasonDetails": "The battery lasts only a few days on a single charge, and the vibrations are too strong.",
+    "AddQueryButton": true
+  },
+  {
+    "ProductName": "Air Purifier",
+    "ProductBrand": "FreshAir",
+    "ProductImageURL": "https://example.com/images/air-purifier.jpg",
+    "QueryTitle": "Which air purifier has the best coverage area for large rooms?",
+    "BoycottingReasonDetails": "The noise level is too high, and the filter replacement costs are expensive.",
+    "AddQueryButton": true
+  },
+  {
+    "ProductName": "Cordless Vacuum Cleaner",
+    "ProductBrand": "CleanPro",
+    "ProductImageURL": "https://example.com/images/cordless-vacuum.jpg",
+    "QueryTitle": "Are there other cordless vacuums with better suction power?",
+    "BoycottingReasonDetails": "The suction power is weak, and it requires frequent charging.",
+    "AddQueryButton": true
+  },
+  {
+    "ProductName": "Smart Watch",
+    "ProductBrand": "TechTime",
+    "ProductImageURL": "https://example.com/images/smartwatch.jpg",
+    "QueryTitle": "Which smartwatch offers the best battery life and fitness tracking?",
+    "BoycottingReasonDetails": "The battery drains quickly, and the fitness tracking is inaccurate.",
+    "AddQueryButton": true
+  },
+  {
+    "ProductName": "Electric Bike",
+    "ProductBrand": "EcoRider",
+    "ProductImageURL": "https://example.com/images/electric-bike.jpg",
+    "QueryTitle": "Are there electric bikes with better range and comfort?",
+    "BoycottingReasonDetails": "The range is lower than advertised, and the ride is uncomfortable on rough terrain.",
+    "AddQueryButton": true
+  }
+]

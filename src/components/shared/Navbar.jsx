@@ -99,8 +99,8 @@ const Navbar = () => {
     </div>
   );
   return (
-    <div className="bg-[#D6BD98] p-2">
-      <div className="flex items-center justify-center">
+    <div className="bg-[#ffeacb] p-2">
+      <div className="flex items-center justify-center p-3">
         <a className="font-jost md:text-5xl text-4xl text-[#303e39] flex items-center gap-2 font-extrabold ">
           <IoBagHandleSharp /> <i>Smart Picks</i> <IoBagHandleSharp />
         </a>
