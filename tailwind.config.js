@@ -14,6 +14,10 @@ export default {
         secondaryColor: "#ffe7c4",
         textColor: "#31433c",
       },
+      backgroundImage: {
+        hero: "url('/src/assets/images/hero.jpg')",
+        queryBanner: "url('/src/assets/bannerImg/querybanner.jpg')",
+      },
     },
   },
   plugins: [require("daisyui")],
