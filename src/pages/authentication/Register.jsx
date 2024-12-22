@@ -38,8 +38,17 @@ const Register = () => {
       });
   };
   return (
-    <div>
-      <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+    <div className="flex items-center justify-center gap-20 mt-10">
+      <div>
+        <h1 className="text-5xl">LOGIN TO SMART PICKS</h1>
+        <div className="form-control mt-6">
+          <button onClick={handleGoogleSignIn} className="btn btn-primary">
+            Sign In With Google
+          </button>
+        </div>
+        <div className="divider"> Or Register</div>
+      </div>
+      <div className="card bg-base-100 w-full max-w-sm flex justify-center shadow-2xl">
         <form onSubmit={handleRegister} className="card-body">
           <div className="form-control">
             <label className="label">
@@ -92,12 +101,12 @@ const Register = () => {
           <div className="form-control mt-6">
             <button className="btn btn-primary">Register</button>
           </div>
-          <p>
-            Already have an account ? <Link to="/login">Login</Link>
+          <p className="text-center ">
+            Already have an account ?{" "}
+            <Link className="text-blue-800" to="/login">
+              Login
+            </Link>
           </p>
-          <button className="btn btn-primary" onClick={handleGoogleSignIn}>
-            Google Sign In
-          </button>
         </form>
       </div>
     </div>

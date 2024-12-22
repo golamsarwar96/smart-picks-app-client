@@ -3,6 +3,8 @@ import { useContext } from "react";
 import { AuthContext } from "../../provider/AuthProvider";
 import { IoBagHandleSharp } from "react-icons/io5";
 
+import navImg from "../../assets/bannerImg/cool-background.png";
+
 const Navbar = () => {
   const { logOut, user } = useContext(AuthContext);
   console.log(user);
@@ -99,7 +101,10 @@ const Navbar = () => {
     </div>
   );
   return (
-    <div className="bg-[#ffeacb] p-2">
+    <div
+      className="bg-[#ffeacb] p-2"
+      // style={{ backgroundImage: `url(${navImg})` }}
+    >
       <div className="flex items-center justify-center p-3">
         <a className="font-jost md:text-5xl text-4xl text-[#303e39] flex items-center gap-2 font-extrabold ">
           <IoBagHandleSharp /> <i>Smart Picks</i> <IoBagHandleSharp />

@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { AuthContext } from "../../provider/AuthProvider";
 import toast from "react-hot-toast";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   const { userSignIn, signInWithGoogle } = useContext(AuthContext);
@@ -34,8 +35,17 @@ const Login = () => {
       });
   };
   return (
-    <div>
-      <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+    <div className="flex justify-center border-2 items-center gap-20 mt-10">
+      <div>
+        <h1 className="text-5xl">LOGIN TO SMART PICKS</h1>
+        <div className="form-control mt-6">
+          <button onClick={handleGoogleSignIn} className="btn btn-primary">
+            Sign In With Google
+          </button>
+        </div>
+        <div className="divider"> Or Login</div>
+      </div>
+      <div className="card bg-base-100 w-full max-w-sm shadow-2xl">
         <form onSubmit={handleLogin} className="card-body">
           <div className="form-control">
             <label className="label">
@@ -69,11 +79,12 @@ const Login = () => {
           <div className="form-control mt-6">
             <button className="btn btn-primary">Login</button>
           </div>
-          <div className="form-control mt-6">
-            <button onClick={handleGoogleSignIn} className="btn btn-primary">
-              Sign In With Google
-            </button>
-          </div>
+          <p className="text-center">
+            New to Smart Picks ?{" "}
+            <Link className="text-blue-800" to="/register">
+              Register
+            </Link>
+          </p>
         </form>
       </div>
     </div>
