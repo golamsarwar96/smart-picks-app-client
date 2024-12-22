@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
+import { AuthContext } from "../provider/AuthProvider";
 
 const MyQueries = () => {
+  const { user } = useContext(AuthContext);
   return (
     <div>
-      <h1 className="text-4xl">My Queries</h1>
+      <h1 className="text-4xl">{user.email}</h1>
     </div>
   );
 };
