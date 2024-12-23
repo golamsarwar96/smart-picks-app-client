@@ -132,7 +132,7 @@ const MyQueries = () => {
                           View Details
                         </button>
                       </Link>
-                      <Link>
+                      <Link to={`/update/${query._id}`}>
                         <button className="btn bg-primaryColor text-secondaryColor rounded-3xl px-5 text-base ">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"

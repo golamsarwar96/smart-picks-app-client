@@ -9,6 +9,7 @@ import MyRecommendations from "../pages/MyRecommendations";
 import Login from "../pages/authentication/Login";
 import Register from "../pages/authentication/Register";
 import PrivateRoute from "./PrivateRoute";
+import UpdateQuery from "../pages/UpdateQuery";
 
 const router = createBrowserRouter([
   {
@@ -50,6 +51,10 @@ const router = createBrowserRouter([
       {
         path: "register",
         element: <Register></Register>,
+      },
+      {
+        path: "update/:id",
+        element: <UpdateQuery></UpdateQuery>,
       },
     ],
   },
