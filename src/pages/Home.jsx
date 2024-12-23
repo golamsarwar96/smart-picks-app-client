@@ -1,4 +1,5 @@
 import Banner from "../components/Banner";
+import Newsletter from "../components/Newsletter";
 import QueryCards from "../components/QueryCards";
 
 const Home = () => {
@@ -6,6 +7,7 @@ const Home = () => {
     <div>
       <Banner></Banner>
       <QueryCards></QueryCards>
+      <Newsletter></Newsletter>
     </div>
   );
 };

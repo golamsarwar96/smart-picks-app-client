@@ -1,10 +1,13 @@
 import { useContext } from "react";
 import { AuthContext } from "../../provider/AuthProvider";
 import toast from "react-hot-toast";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 const Login = () => {
   const { userSignIn, signInWithGoogle } = useContext(AuthContext);
+  const location = useLocation();
+  const navigate = useNavigate();
+  const form = location?.state || "/";
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -17,6 +20,7 @@ const Login = () => {
       const result = await userSignIn(email, password);
       console.log(result);
       toast.success("SUCCESSFULLY LOGGED IN");
+      navigate(form, { replace: true });
     } catch (err) {
       console.log(err);
       toast.error(err.message);
@@ -28,6 +32,7 @@ const Login = () => {
       .then((result) => {
         console.log(result.user);
         toast.success("Successful");
+        navigate(form, { replace: true });
       })
       .catch((err) => {
         console.log(err);
