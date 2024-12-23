@@ -22,6 +22,26 @@ const Queries = () => {
           <AllQueryCard key={query._id} query={query}></AllQueryCard>
         ))}
       </div>
+      {/* <div className="flex justify-center items-center gap-2 text-3xl mt-10">
+        <button
+          onClick={handleOneColumn}
+          className="px-2 py-2 bg-primaryColor rounded-full text-secondaryColor"
+        >
+          <TbColumns1></TbColumns1>
+        </button>
+        <button
+          onClick={handleTwoColumn}
+          className="px-2 py-2 bg-primaryColor rounded-full text-secondaryColor"
+        >
+          <TbColumns2></TbColumns2>
+        </button>
+        <button
+          onClick={handleThreeColumn}
+          className="px-2 py-2 bg-primaryColor rounded-full text-secondaryColor"
+        >
+          <TbColumns3></TbColumns3>
+        </button>
+      </div> */}
     </div>
   );
 };
