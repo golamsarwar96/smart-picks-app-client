@@ -75,7 +75,7 @@ const QueryDetails = () => {
   return (
     <div className="bg-primaryColor">
       {/* user Information */}
-      <h1 className="text-5xl font-bold pt-3 pl-5 text-secondaryColor">
+      <h1 className="text-5xl text-center font-bold pt-3 pl-5 text-secondaryColor">
         Query Posted By,
       </h1>
       <div className="flex justify-between items-center p-7 border mt-5">
@@ -84,10 +84,10 @@ const QueryDetails = () => {
           src={query.buyer?.user_photo}
           alt=""
         />
-        <h1 className="text-secondaryColor text-2xl">
+        <h1 className="text-secondaryColor bg-textColor px-5 py-2 text-2xl">
           User Name : {query.buyer?.user_name}
         </h1>
-        <h1 className="text-secondaryColor text-2xl">
+        <h1 className="text-secondaryColor text-2xl bg-textColor px-5 py-2 text-2xl">
           Email:{query.buyer?.user_email}
         </h1>
       </div>
