@@ -127,7 +127,7 @@ const MyQueries = () => {
                       {new Date(query.time).toISOString().split("T")[0]}
                     </p>
                     <div className="card-actions flex justify-center items-center mt-5">
-                      <Link>
+                      <Link to={`/query/${query._id}`}>
                         <button className="btn bg-primaryColor text-secondaryColor rounded-3xl px-5 text-base ">
                           View Details
                         </button>

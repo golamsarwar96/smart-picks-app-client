@@ -1,0 +1,65 @@
+[
+  {
+    "RecommendationTitle": "Looking for better sound quality and battery life?",
+    "RecommendedProductName": "Elite Noise Cancelling Headphones",
+    "RecommendedProductImage": "https://i.ibb.co.com/newimage-headphones.jpg",
+    "RecommendationReason": "These headphones offer superior noise cancellation, enhanced sound quality, and longer battery life.",
+    "AddRecommendation": true
+  },
+  {
+    "RecommendationTitle": "Seeking 4K TVs with deep blacks and accurate colors?",
+    "RecommendedProductName": "ProVision 4K OLED TV",
+    "RecommendedProductImage": "https://i.ibb.co.com/newimage-tv.jpg",
+    "RecommendationReason": "This TV provides excellent color accuracy and deep blacks with its OLED technology.",
+    "AddRecommendation": true
+  },
+  {
+    "RecommendationTitle": "Want a gaming laptop that stays cool under load?",
+    "RecommendedProductName": "HyperPower Gaming Laptop",
+    "RecommendedProductImage": "https://i.ibb.co.com/newimage-laptop.jpg",
+    "RecommendationReason": "Equipped with a powerful GPU, efficient cooling system, and quieter fans for optimal gaming.",
+    "AddRecommendation": true
+  },
+  {
+    "RecommendationTitle": "Need a smartphone with better camera performance?",
+    "RecommendedProductName": "PixelSnap Pro",
+    "RecommendedProductImage": "https://i.ibb.co.com/newimage-smartphone.jpg",
+    "RecommendationReason": "Features an advanced camera system and long battery life for the best value.",
+    "AddRecommendation": true
+  },
+  {
+    "RecommendationTitle": "Looking for an electric toothbrush with long-lasting battery life?",
+    "RecommendedProductName": "UltraClean Electric Toothbrush",
+    "RecommendedProductImage": "https://i.ibb.co.com/newimage-toothbrush.jpg",
+    "RecommendationReason": "Offers up to 30 days of battery life and customizable vibration settings.",
+    "AddRecommendation": true
+  },
+  {
+    "RecommendationTitle": "Want a quieter air purifier with low maintenance costs?",
+    "RecommendedProductName": "SilentBreeze XL Air Purifier",
+    "RecommendedProductImage": "https://i.ibb.co.com/newimage-airpurifier.jpg",
+    "RecommendationReason": "Covers large rooms effectively while operating quietly with affordable filters.",
+    "AddRecommendation": true
+  },
+  {
+    "RecommendationTitle": "Searching for a cordless vacuum with powerful suction?",
+    "RecommendedProductName": "PowerSweep Cordless Vacuum",
+    "RecommendedProductImage": "https://i.ibb.co.com/newimage-vacuum.jpg",
+    "RecommendationReason": "Delivers high suction power and extended battery life for uninterrupted cleaning.",
+    "AddRecommendation": true
+  },
+  {
+    "RecommendationTitle": "Need a smartwatch with accurate fitness tracking and great battery life?",
+    "RecommendedProductName": "FitTrack Max Smart Watch",
+    "RecommendedProductImage": "https://i.ibb.co.com/newimage-smartwatch.jpg",
+    "RecommendationReason": "Combines precise fitness tracking with a battery life that lasts up to 10 days.",
+    "AddRecommendation": true
+  },
+  {
+    "RecommendationTitle": "Looking for an electric bike with a longer range and comfortable ride?",
+    "RecommendedProductName": "ComfyCruiser Electric Bike",
+    "RecommendedProductImage": "https://i.ibb.co.com/newimage-ebike.jpg",
+    "RecommendationReason": "Provides extended range and a smooth, comfortable ride even on rough terrains.",
+    "AddRecommendation": true
+  }
+]

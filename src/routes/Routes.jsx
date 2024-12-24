@@ -10,6 +10,7 @@ import Login from "../pages/authentication/Login";
 import Register from "../pages/authentication/Register";
 import PrivateRoute from "./PrivateRoute";
 import UpdateQuery from "../pages/UpdateQuery";
+import QueryDetails from "../components/QueryDetails";
 
 const router = createBrowserRouter([
   {
@@ -55,6 +56,10 @@ const router = createBrowserRouter([
       {
         path: "update/:id",
         element: <UpdateQuery></UpdateQuery>,
+      },
+      {
+        path: "query/:id",
+        element: <QueryDetails></QueryDetails>,
       },
     ],
   },

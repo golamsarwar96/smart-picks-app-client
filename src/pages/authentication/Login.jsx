@@ -8,7 +8,7 @@ const Login = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const form = location?.state || "/";
-
+  console.log(form);
   const handleLogin = async (e) => {
     e.preventDefault();
     const form = e.target;

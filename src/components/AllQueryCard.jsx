@@ -1,5 +1,8 @@
+import { Link } from "react-router-dom";
+
 const AllQueryCard = ({ query }) => {
   const {
+    _id,
     product_name,
     product_brand,
     query_title,
@@ -33,9 +36,11 @@ const AllQueryCard = ({ query }) => {
           </p>
           {/* //new Date(time).toISOString().split("T")[0] */}
           <div className="card-actions flex justify-between items-center mt-5">
-            <button className="btn bg-primaryColor text-secondaryColor rounded-3xl px-7 text-base ">
-              Recommend
-            </button>
+            <Link to={`/query/${_id}`}>
+              <button className="btn bg-primaryColor text-secondaryColor rounded-3xl px-7 text-base ">
+                Recommend
+              </button>
+            </Link>
             <p className="px-3 py-1 bg-primaryColor text-secondaryColor mt-2 font-medium rounded-xl">
               Recommended {recommendedCount} times
             </p>
