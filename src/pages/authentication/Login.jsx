@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { AuthContext } from "../../provider/AuthProvider";
 import toast from "react-hot-toast";
 import { Link, useLocation, useNavigate } from "react-router-dom";
+import axios from "axios";
 
 const Login = () => {
   const { userSignIn, signInWithGoogle } = useContext(AuthContext);
@@ -27,17 +28,26 @@ const Login = () => {
     }
   };
 
-  const handleGoogleSignIn = () => {
-    signInWithGoogle()
-      .then((result) => {
-        console.log(result.user);
-        toast.success("Successful");
-        navigate(form, { replace: true });
-      })
-      .catch((err) => {
-        console.log(err);
-        toast.error(err.message);
-      });
+  const handleGoogleSignIn = async () => {
+    try {
+      await signInWithGoogle();
+      toast.success("Google Sign In Successful");
+      navigate(form, { replace: true });
+    } catch (err) {
+      console.log(err);
+      toast.error(err.message);
+    }
+    // signInWithGoogle()
+    //   .then((result) => {
+
+    //     console.log(result.user);
+    //     toast.success("Successful");
+    //     navigate(form, { replace: true });
+    //   })
+    //   .catch((err) => {
+    //     console.log(err);
+    //     toast.error(err.message);
+    //   });
   };
   return (
     <div className="flex justify-center border-2 items-center gap-20 mt-10">
