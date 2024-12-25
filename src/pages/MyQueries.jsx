@@ -13,7 +13,8 @@ const MyQueries = () => {
   useEffect(() => {
     const fetchAllQuery = async () => {
       const { data } = await axios.get(
-        `${import.meta.env.VITE_API_URL}/queries/${user?.email}`
+        `${import.meta.env.VITE_API_URL}/queries/${user?.email}`,
+        { withCredentials: true }
       );
       const sortedQueries = data.sort((a, b) => b.time - a.time);
       setQueries(sortedQueries);

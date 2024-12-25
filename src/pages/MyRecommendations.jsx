@@ -10,7 +10,8 @@ const MyRecommendations = () => {
   useEffect(() => {
     const fetchAllRecommendation = async () => {
       const { data } = await axios.get(
-        `${import.meta.env.VITE_API_URL}/recommendation/${user?.email}`
+        `${import.meta.env.VITE_API_URL}/recommendation/${user?.email}`,
+        { withCredentials: true }
       );
       const sortedQueries = data.sort((a, b) => b.time - a.time);
       setMyRecommendation(sortedQueries);
