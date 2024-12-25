@@ -1,5 +1,5 @@
 const RcCard = ({ recommendation, idx }) => {
-  const { rc_product_name, rc_product_photo, recommendation_title, rc_name } =
+  const { rc_product_photo, recommendation_title, rc_name } =
     recommendation || {};
   return (
     <div>
