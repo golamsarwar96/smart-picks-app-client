@@ -13,27 +13,26 @@ const Register = () => {
     const email = form.email.value;
     const password = form.password.value;
     const photo = form.photo.value;
-    console.log(email, password);
 
     try {
       const result = await userRegister(email, password);
-      console.log(result);
+      // console.log(result);
       await updateUserProfile(name, photo);
       setUser({ ...result.user, photoURL: photo, displayName: name });
       toast.success("Successfully Created User");
     } catch (err) {
-      console.log(err);
+      // console.log(err);
       toast.error(err.message);
     }
   };
   const handleGoogleSignIn = () => {
     signInWithGoogle()
       .then((result) => {
-        console.log(result.user);
+        // console.log(result.user);
         toast.success("Successful");
       })
       .catch((err) => {
-        console.log(err);
+        // console.log(err);
         toast.error(err.message);
       });
   };

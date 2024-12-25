@@ -4,19 +4,19 @@ import AllQueryCard from "./AllQueryCard";
 
 const Comments = ({ id }) => {
   const [recommendations, setRecommendations] = useState([]);
-  console.log(id);
+  // console.log(id);
   useEffect(() => {
     const fetchAllRecommendations = async () => {
       const { data } = await axios.get(
         `${import.meta.env.VITE_API_URL}/add-recommendation`
       );
-      console.log(data);
+      // console.log(data);
 
       const filtered = [...data].filter((item) => item.queryID === id);
-      console.log(filtered);
+      // console.log(filtered);
       const sortedQueries = filtered.sort((a, b) => b.time - a.time);
       setRecommendations(sortedQueries);
-      console.log(sortedQueries);
+      // console.log(sortedQueries);
     };
     fetchAllRecommendations();
   }, []);

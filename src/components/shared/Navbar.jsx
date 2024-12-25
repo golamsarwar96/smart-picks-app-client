@@ -7,7 +7,7 @@ import navImg from "../../assets/bannerImg/cool-background.png";
 
 const Navbar = () => {
   const { logOut, user } = useContext(AuthContext);
-  console.log(user);
+  // console.log(user);
   const links = (
     <div className="flex gap-2 items-center">
       {user && user?.email ? (

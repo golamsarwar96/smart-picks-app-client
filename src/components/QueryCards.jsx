@@ -11,7 +11,7 @@ const QueryCards = () => {
       );
       const sortedQueries = data.sort((a, b) => b.time - a.time);
       setQueries(sortedQueries);
-      console.log(sortedQueries);
+      // console.log(sortedQueries);
     };
     fetchAllQuery();
   }, []);

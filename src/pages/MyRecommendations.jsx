@@ -15,7 +15,7 @@ const MyRecommendations = () => {
       );
       const sortedQueries = data.sort((a, b) => b.time - a.time);
       setMyRecommendation(sortedQueries);
-      console.log(sortedQueries);
+      // console.log(sortedQueries);
     };
     fetchAllRecommendation();
   }, [user]);

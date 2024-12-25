@@ -8,7 +8,6 @@ import { useNavigate } from "react-router-dom";
 const AddQueries = () => {
   const { user } = useContext(AuthContext);
   const navigate = useNavigate();
-  console.log(user);
 
   const handleAddQueries = async (e) => {
     e.preventDefault();
@@ -24,8 +23,6 @@ const AddQueries = () => {
     const time = Date.now();
     const day = new Date(time);
     const recommendedCount = 0;
-
-    console.log(time.toString());
 
     const formData = {
       product_name,
@@ -48,12 +45,12 @@ const AddQueries = () => {
         `${import.meta.env.VITE_API_URL}/add-queries`,
         formData
       );
-      console.log(data);
+      // console.log(data);
       toast.success("Query added successfully");
       form.reset();
       navigate("/my-queries");
     } catch (err) {
-      console.log(err);
+      // console.log(err);
       toast.error(err.message);
     }
   };

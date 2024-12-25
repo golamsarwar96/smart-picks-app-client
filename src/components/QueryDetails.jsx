@@ -9,7 +9,6 @@ const QueryDetails = () => {
   const { user } = useContext(AuthContext);
   const { id } = useParams();
   const navigate = useNavigate();
-  console.log(id);
   const [query, setQuery] = useState({});
   useEffect(() => {
     const fetchQueryData = async () => {
@@ -17,7 +16,7 @@ const QueryDetails = () => {
         `${import.meta.env.VITE_API_URL}/query/${id}`
       );
       setQuery(data);
-      console.log(data);
+      // console.log(data);
     };
     fetchQueryData();
   }, [id]);
@@ -39,8 +38,6 @@ const QueryDetails = () => {
     const time = Date.now();
     const day = new Date(time);
 
-    console.log(time.toString());
-
     const recommendationData = {
       recommendation_title,
       rc_product_name,
@@ -56,19 +53,17 @@ const QueryDetails = () => {
       day,
       time,
     };
-    console.log(recommendationData);
 
     try {
       const { data } = await axios.post(
         `${import.meta.env.VITE_API_URL}/add-recommendation`,
         recommendationData
       );
-      console.log(data);
+      // console.log(data);
       toast.success("Query added successfully");
       form.reset();
       navigate("/queries");
     } catch (err) {
-      console.log(err);
       toast.error(err.message);
     }
   };

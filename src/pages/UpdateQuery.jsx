@@ -7,7 +7,7 @@ import toast from "react-hot-toast";
 const UpdateQuery = () => {
   const { user } = useContext(AuthContext);
   const { id } = useParams();
-  console.log(id);
+
   const navigate = useNavigate();
   const [query, setQuery] = useState({});
   useEffect(() => {
@@ -16,13 +16,11 @@ const UpdateQuery = () => {
         `${import.meta.env.VITE_API_URL}/query/${id}`
       );
       setQuery(data);
-      console.log(data);
+      // console.log(data);
     };
     fetchQueryData();
   }, [id]);
 
-  console.log(query);
-  console.log(user);
   const handleUpdateQueries = async (e) => {
     e.preventDefault();
     const form = e.target;
@@ -37,9 +35,6 @@ const UpdateQuery = () => {
     const time = Date.now();
     const day = new Date(time);
     const recommendedCount = query.recommendedCount;
-
-    console.log(time.toString());
-    console.log(`${import.meta.env.VITE_API_URL}/update-query/${id}`);
 
     const formData = {
       product_name,
@@ -56,18 +51,18 @@ const UpdateQuery = () => {
       day,
       recommendedCount,
     };
-    console.log(formData);
+    // console.log(formData);
     try {
       const { data } = await axios.put(
         `${import.meta.env.VITE_API_URL}/update-query/${id}`,
         formData
       );
-      console.log(data);
+      // console.log(data);
       toast.success("Query Updated successfully");
       form.reset();
       navigate("/my-queries");
     } catch (err) {
-      console.log(err);
+      // console.log(err);
       toast.error(err.message);
     }
   };

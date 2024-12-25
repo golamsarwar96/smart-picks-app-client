@@ -9,21 +9,19 @@ const Login = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const form = location?.state || "/";
-  console.log(form);
   const handleLogin = async (e) => {
     e.preventDefault();
     const form = e.target;
     const email = form.email.value;
     const password = form.password.value;
-    console.log(email, password);
 
     try {
       const result = await userSignIn(email, password);
-      console.log(result);
+      // console.log(result);
       toast.success("SUCCESSFULLY LOGGED IN");
       navigate(form, { replace: true });
     } catch (err) {
-      console.log(err);
+      // console.log(err);
       toast.error(err.message);
     }
   };
@@ -34,7 +32,7 @@ const Login = () => {
       toast.success("Google Sign In Successful");
       navigate(form, { replace: true });
     } catch (err) {
-      console.log(err);
+      // console.log(err);
       toast.error(err.message);
     }
     // signInWithGoogle()

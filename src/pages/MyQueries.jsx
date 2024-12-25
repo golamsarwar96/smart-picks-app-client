@@ -18,13 +18,12 @@ const MyQueries = () => {
       );
       const sortedQueries = data.sort((a, b) => b.time - a.time);
       setQueries(sortedQueries);
-      console.log(sortedQueries);
+      // console.log(sortedQueries);
     };
     fetchAllQuery();
   }, [user]);
 
   const handleDelete = (_id) => {
-    // console.log(_id);
     Swal.fire({
       title: "Are you sure?",
       text: "You won't be able to revert this!",

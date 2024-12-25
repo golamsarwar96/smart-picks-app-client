@@ -9,11 +9,10 @@ const Recommendations = () => {
       const { data } = await axios.get(
         `${import.meta.env.VITE_API_URL}/add-recommendation`
       );
-      console.log(data);
 
       const sortedQueries = data.sort((a, b) => b.time - a.time);
       setRecommendations(sortedQueries);
-      console.log(sortedQueries);
+      // console.log(sortedQueries);
     };
     fetchAllRecommendations();
   }, []);
