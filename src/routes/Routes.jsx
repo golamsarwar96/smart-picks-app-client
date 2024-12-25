@@ -11,6 +11,7 @@ import Register from "../pages/authentication/Register";
 import PrivateRoute from "./PrivateRoute";
 import UpdateQuery from "../pages/UpdateQuery";
 import QueryDetails from "../components/QueryDetails";
+import ErrorPage from "../pages/ErrorPage";
 
 const router = createBrowserRouter([
   {
@@ -62,6 +63,10 @@ const router = createBrowserRouter([
         element: <QueryDetails></QueryDetails>,
       },
     ],
+  },
+  {
+    path: "*",
+    element: <ErrorPage></ErrorPage>,
   },
 ]);
 export default router;
