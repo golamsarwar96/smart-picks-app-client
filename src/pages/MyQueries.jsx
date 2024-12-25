@@ -2,7 +2,6 @@ import React, { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../provider/AuthProvider";
 import axios from "axios";
 import noData from "../assets/noData.json";
-import AllQueryCard from "../components/AllQueryCard";
 import { Link } from "react-router-dom";
 import Lottie from "lottie-react";
 import { RiDeleteBin5Fill } from "react-icons/ri";
