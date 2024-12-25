@@ -87,7 +87,7 @@ const QueryDetails = () => {
         <h1 className="text-secondaryColor bg-textColor px-5 py-2 text-2xl">
           User Name : {query.buyer?.user_name}
         </h1>
-        <h1 className="text-secondaryColor text-2xl bg-textColor px-5 py-2 text-2xl">
+        <h1 className="text-secondaryColor bg-textColor px-5 py-2 text-2xl">
           Email:{query.buyer?.user_email}
         </h1>
       </div>
