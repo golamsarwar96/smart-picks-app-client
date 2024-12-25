@@ -5,7 +5,7 @@ import { TbColumns1, TbColumns2, TbColumns3 } from "react-icons/tb";
 const Queries = () => {
   const [queries, setQueries] = useState([]);
   const [search, setSearch] = useState("");
-  const [column, setColumn] = useState(1);
+  const [column, setColumn] = useState(3);
   useEffect(() => {
     const fetchAllQuery = async () => {
       const { data } = await axios.get(
@@ -57,11 +57,11 @@ const Queries = () => {
       </div>
       <div
         className={`grid gap-4 ${
-          column === 1
-            ? "grid-cols-1"
+          column === 3
+            ? "grid-cols-3"
             : column === 2
             ? "grid-cols-2"
-            : "grid-cols-3"
+            : "grid-cols-1"
         } gap-3 my-12`}
       >
         {queries
