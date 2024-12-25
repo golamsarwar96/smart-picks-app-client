@@ -1,6 +1,8 @@
 import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../provider/AuthProvider";
 import axios from "axios";
+import { RiDeleteBin5Fill } from "react-icons/ri";
+import Swal from "sweetalert2";
 
 const MyRecommendations = () => {
   const { user } = useContext(AuthContext);
@@ -16,6 +18,40 @@ const MyRecommendations = () => {
     };
     fetchAllRecommendation();
   }, [user]);
+
+  const deleteRecommendation = (_id) => {
+    Swal.fire({
+      title: "Are you sure?",
+      text: "You won't be able to revert this!",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Yes, delete it!",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        fetch(`${import.meta.env.VITE_API_URL}/recommendation/${_id}`, {
+          method: "DELETE",
+        })
+          .then((res) => res.json())
+          .then((data) => {
+            // console.log(data);
+            if (data.deletedCount > 0) {
+              Swal.fire({
+                title: "Deleted!",
+                text: "Your file has been deleted.",
+                icon: "success",
+              });
+
+              const remaining = myRecommendation.filter(
+                (recommendation) => recommendation._id !== _id
+              );
+              setMyRecommendation(remaining);
+            }
+          });
+      }
+    });
+  };
 
   return (
     <div className="bg-primaryColor">
@@ -34,7 +70,7 @@ const MyRecommendations = () => {
               <th>ID</th>
               <th>Product Image</th>
               <th>Product Name</th>
-              <th>Favorite Color</th>
+              <th>Reason To Recommend</th>
             </tr>
           </thead>
           <tbody className="text-secondaryColor text-base">
@@ -49,6 +85,15 @@ const MyRecommendations = () => {
                 </td>
                 <td>{recommendation.rc_product_name}</td>
                 <td>{recommendation.recommended_reason}</td>
+                <td>
+                  <button
+                    onClick={() => deleteRecommendation(recommendation._id)}
+                    className="px-3 py-3 text-xl bg-secondaryColor rounded-full text-primaryColor "
+                  >
+                    {" "}
+                    <RiDeleteBin5Fill className="" />
+                  </button>
+                </td>
               </tr>
             ))}
           </tbody>
