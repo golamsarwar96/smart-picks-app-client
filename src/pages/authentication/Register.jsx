@@ -2,6 +2,10 @@ import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../provider/AuthProvider";
 import toast from "react-hot-toast";
+import Lottie from "lottie-react";
+import login2 from "../../assets/login2.json";
+import login3 from "../../assets/login3.json";
+import { FaGoogle } from "react-icons/fa";
 
 const Register = () => {
   const { userRegister, setUser, updateUserProfile, signInWithGoogle } =
@@ -37,21 +41,29 @@ const Register = () => {
       });
   };
   return (
-    <div className="flex items-center justify-center gap-20 mt-10">
+    <div className="flex flex-col-reverse lg:flex-row justify-center items-center gap-20 bg-secondaryColor">
       <div>
-        <h1 className="text-5xl">LOGIN TO SMART PICKS</h1>
-        <div className="form-control mt-6">
-          <button onClick={handleGoogleSignIn} className="btn btn-primary">
-            Sign In With Google
-          </button>
-        </div>
-        <div className="divider"> Or Register</div>
+        <Lottie animationData={login3}></Lottie>
       </div>
       <div className="card bg-base-100 w-full max-w-sm flex justify-center shadow-2xl">
-        <form onSubmit={handleRegister} className="card-body">
+        <form
+          onSubmit={handleRegister}
+          className="card-body bg-primaryColor text-secondaryColor"
+        >
+          <h1 className="text-5xl text-center font-bold">
+            REGISTER TO SMART PICKS
+          </h1>
+          <div className="form-control mt-6">
+            <button
+              onClick={handleGoogleSignIn}
+              className="btn bg-secondaryColor text-primaryColor"
+            >
+              <FaGoogle></FaGoogle> Sign In With Google
+            </button>
+          </div>
           <div className="form-control">
             <label className="label">
-              <span className="label-text">Email</span>
+              <span className="label-text text-secondaryColor">Email</span>
             </label>
             <input
               type="text"
@@ -63,7 +75,7 @@ const Register = () => {
           </div>
           <div className="form-control">
             <label className="label">
-              <span className="label-text">Email</span>
+              <span className="label-text text-secondaryColor">Email</span>
             </label>
             <input
               type="email"
@@ -75,7 +87,7 @@ const Register = () => {
           </div>
           <div className="form-control">
             <label className="label">
-              <span className="label-text">Email</span>
+              <span className="label-text text-secondaryColor">Email</span>
             </label>
             <input
               type="url"
@@ -87,7 +99,7 @@ const Register = () => {
           </div>
           <div className="form-control">
             <label className="label">
-              <span className="label-text">Password</span>
+              <span className="label-text text-secondaryColor">Password</span>
             </label>
             <input
               type="password"
@@ -98,11 +110,16 @@ const Register = () => {
             />
           </div>
           <div className="form-control mt-6">
-            <button className="btn btn-primary">Register</button>
+            <button className="btn bg-secondaryColor text-primaryColor">
+              Register
+            </button>
           </div>
-          <p className="text-center ">
+          <p className="text-center mt-3 ">
             Already have an account ?{" "}
-            <Link className="text-blue-800" to="/login">
+            <Link
+              className="px-5 py-2 bg-secondaryColor text-primaryColor"
+              to="/login"
+            >
               Login
             </Link>
           </p>

@@ -8,7 +8,7 @@ import { FaLinkedin } from "react-icons/fa";
 const Footer = () => {
   const { user } = useContext(AuthContext);
   return (
-    <footer className="footer footer-center bg-[#ffeacb] text-base-content rounded p-10">
+    <footer className="footer footer-center bg-secondaryColor text-base-content rounded p-10">
       <div className="flex items-center justify-center">
         <a className="font-jost md:text-5xl text-4xl text-[#303e39] flex items-center gap-2 font-extrabold ">
           <IoBagHandleSharp /> <i>Smart Picks</i> <IoBagHandleSharp />
