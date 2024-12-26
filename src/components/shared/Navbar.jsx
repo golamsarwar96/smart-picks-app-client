@@ -141,6 +141,7 @@ const Navbar = () => {
           {user && user?.email ? (
             <div className="flex text-sm items-center gap-2 text-white  font-semibold rounded-3xl">
               <img
+                referrerPolicy="no-referrer"
                 title={user?.displayName}
                 className="md:w-10 w-7"
                 src={user?.photoURL}
