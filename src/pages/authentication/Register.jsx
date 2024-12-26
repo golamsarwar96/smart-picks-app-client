@@ -63,7 +63,7 @@ const Register = () => {
           </div>
           <div className="form-control">
             <label className="label">
-              <span className="label-text text-secondaryColor">Email</span>
+              <span className="label-text text-secondaryColor">Your Name</span>
             </label>
             <input
               type="text"
@@ -79,7 +79,7 @@ const Register = () => {
             </label>
             <input
               type="email"
-              placeholder="email"
+              placeholder="Your Email"
               name="email"
               className="input input-bordered"
               required
@@ -87,7 +87,7 @@ const Register = () => {
           </div>
           <div className="form-control">
             <label className="label">
-              <span className="label-text text-secondaryColor">Email</span>
+              <span className="label-text text-secondaryColor">Photo URL</span>
             </label>
             <input
               type="url"
@@ -103,7 +103,7 @@ const Register = () => {
             </label>
             <input
               type="password"
-              placeholder="password"
+              placeholder="Your Password"
               name="password"
               className="input input-bordered"
               required

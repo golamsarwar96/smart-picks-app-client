@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const QueryCard = ({ query }) => {
   const {
     product_name,
@@ -30,9 +32,11 @@ const QueryCard = ({ query }) => {
           </h2>
 
           <div className="card-actions flex justify-between items-center mt-5">
-            <button className="btn bg-primaryColor text-secondaryColor rounded-3xl px-7 text-base ">
-              Add Query
-            </button>
+            <Link to="/add-queries">
+              <button className="btn bg-primaryColor text-secondaryColor rounded-3xl px-7 text-base ">
+                Add Query
+              </button>
+            </Link>
             <p className="px-3 py-1 bg-primaryColor text-secondaryColor mt-2 font-medium rounded-xl">
               Recommended {recommendedCount} times
             </p>
