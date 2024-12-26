@@ -12,7 +12,7 @@ const AllQueryCard = ({ query }) => {
   } = query || {};
   return (
     <div className="m-5">
-      <div className="card bg-base-100 w-96 shadow-xl">
+      <div className="card bg-base-100  shadow-xl">
         <figure className="p-3">
           <img
             className="w-96 rounded-xl h-80 object-cover"
@@ -35,7 +35,7 @@ const AllQueryCard = ({ query }) => {
             Posted On : {new Date(time).toISOString().split("T")[0]}
           </p>
           {/* //new Date(time).toISOString().split("T")[0] */}
-          <div className="card-actions flex justify-between items-center mt-5">
+          <div className="card-actions flex justify-center items-center mt-5">
             <Link to={`/query/${_id}`}>
               <button className="btn bg-primaryColor text-secondaryColor rounded-3xl px-7 text-base ">
                 Recommend

@@ -19,8 +19,8 @@ const Queries = () => {
   }, [search]);
   return (
     <div className=" text-center">
-      <div className="flex items-center justify-between">
-        <div className="mt-10 flex p-1 overflow-hidden border rounded-lg max-w-min focus-within:ring focus-within:ring-opacity-40 focus-within:border-primaryColor focus-within:ring-secondaryColor">
+      <div className="flex items-center justify-between flex-col md:flex-row">
+        <div className="mt-10 flex p-2 overflow-hidden border rounded-lg max-w-min focus-within:ring focus-within:ring-opacity-40 focus-within:border-primaryColor focus-within:ring-secondaryColor">
           <input
             className="px-6 py-2 text-gray-700 placeholder-gray-500 bg-white outline-none focus:placeholder-transparent"
             type="text"
@@ -30,11 +30,11 @@ const Queries = () => {
             aria-label="Enter Job Title"
           />
 
-          <button className="px-1 md:px-4 py-3 text-sm font-medium tracking-wider text-secondaryColor uppercase transition-colors duration-300 transform bg-primaryColor rounded-md hover:bg-gray-600 focus:bg-gray-600 focus:outline-none">
+          <button className="px-3 md:px-4 py-3 text-sm font-medium tracking-wider text-secondaryColor uppercase transition-colors duration-300 transform bg-primaryColor rounded-md hover:bg-gray-600 focus:bg-gray-600 focus:outline-none">
             Search
           </button>
         </div>
-        <div className="flex gap-2 mt-10">
+        <div className="flex gap-2 mt-10 ">
           <button
             onClick={() => setColumn(1)}
             className="px-[18px] py-4 font-bold bg-primaryColor text-secondaryColor rounded-full"
@@ -58,11 +58,11 @@ const Queries = () => {
       <div
         className={`grid gap-4 ${
           column === 3
-            ? "grid-cols-3"
+            ? "lg:grid-cols-3"
             : column === 2
             ? "grid-cols-2"
             : "grid-cols-1"
-        } gap-3 my-12`}
+        } gap-3 my-12 md:grid-col-2 grid-cols-1`}
       >
         {queries
           .filter((query) => {

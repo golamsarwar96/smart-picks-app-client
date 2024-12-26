@@ -18,13 +18,15 @@ const QueryCards = () => {
   return (
     <div className="mt-20 text-center">
       <div className="space-y-4">
-        <h1 className="text-5xl font-bold">Pick From Our Feature Page</h1>
-        <p>
+        <h1 className="text-5xl font-bold text-primaryColor">
+          Pick From Our Feature Page
+        </h1>
+        <p className="w-[80%] mx-auto md:w-full">
           We offer you the best products and best recommendation so that you
           don't have to worry about your next purchase.
         </p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 my-12">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-3 my-12">
         {queries.slice(0, 6).map((query) => (
           <QueryCard key={query._id} query={query}></QueryCard>
         ))}

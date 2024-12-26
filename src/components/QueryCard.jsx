@@ -9,7 +9,7 @@ const QueryCard = ({ query }) => {
   } = query || {};
   return (
     <div className="m-5">
-      <div className="card bg-base-100 w-96 shadow-xl">
+      <div className="card bg-base-100 shadow-xl">
         <figure className="p-3">
           <img
             className="w-96 rounded-xl h-80 object-cover"

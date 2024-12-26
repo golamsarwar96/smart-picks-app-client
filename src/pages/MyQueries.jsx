@@ -90,7 +90,7 @@ const MyQueries = () => {
               Queries.
             </h1>
             <Link to="/add-queries">
-              <button className="absolute md:top-32 font-bold md:right-28 px-10 py-4 bg-primaryColor text-secondaryColor">
+              <button className="absolute md:top-32 font-bold md:right-28 bottom-56 pb-10 right-32 px-10 py-4 bg-primaryColor text-secondaryColor">
                 Add Query
               </button>
             </Link>

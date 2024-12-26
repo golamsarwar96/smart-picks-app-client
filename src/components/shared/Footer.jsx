@@ -17,7 +17,7 @@ const Footer = () => {
       <nav className="grid grid-flow-col gap-4">
         <div className="flex gap-2 items-center">
           {user && user?.email ? (
-            <div className="flex flex-col md:flex-row text-left md:items-center gap-2 text-black  font-semibold rounded-3xl">
+            <div className="flex flex-col md:flex-row text-center font-bold md:items-center gap-2 text-primaryColor rounded-3xl">
               <NavLink
                 className={({ isActive }) =>
                   isActive

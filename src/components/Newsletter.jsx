@@ -3,7 +3,7 @@ import newsletterLottie from "../assets/newsletterLottie.json";
 import { FaPaperPlane } from "react-icons/fa";
 const Newsletter = () => {
   return (
-    <div className="bg-primaryColor flex flex-col justify-center items-center text-secondaryColor w-full mb-10 rounded-3xl">
+    <div className="bg-primaryColor flex flex-col justify-center items-center text-secondaryColor w-[90%] mx-auto mb-10 rounded-3xl m-2">
       <div className="">
         <Lottie
           animationData={newsletterLottie}
@@ -25,7 +25,7 @@ const Newsletter = () => {
           <input
             type="text"
             placeholder="Your Email"
-            className="input input-bordered w-full hover:border-2 hover:border-secondaryColor"
+            className="input input-bordered w-[80%] mx-auto hover:border-2 hover:border-secondaryColor"
           />
         </div>
         <div className="flex items-center justify-center mt-5">

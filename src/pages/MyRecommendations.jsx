@@ -56,7 +56,7 @@ const MyRecommendations = () => {
 
   return (
     <div className="bg-primaryColor">
-      <h1 className="py-10 font-bold text-5xl text-center text-secondaryColor">
+      <h1 className="py-10 font-bold md:text-5xl text-3xl px-3 text-center text-secondaryColor">
         You have recommended{" "}
         <span className="px-6 py-1 bg-textColor rounded-full">
           {myRecommendation.length}

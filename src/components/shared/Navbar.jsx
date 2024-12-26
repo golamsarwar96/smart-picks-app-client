@@ -101,19 +101,16 @@ const Navbar = () => {
     </div>
   );
   return (
-    <div
-      className="bg-[#ffeacb] p-2"
-      // style={{ backgroundImage: `url(${navImg})` }}
-    >
+    <div className="bg-secondaryColor p-2">
       <div className="flex items-center justify-center p-3">
-        <a className="font-jost md:text-5xl text-4xl text-[#303e39] flex items-center gap-2 font-extrabold ">
+        <a className="font-jost md:text-5xl text-4xl text-textColor flex items-center gap-2 font-extrabold ">
           <IoBagHandleSharp /> <i>Smart Picks</i> <IoBagHandleSharp />
         </a>
       </div>
-      <div className="flex justify-center md:gap-1 items-center gap-5">
+      <div className="flex md:flex-col lg:flex-row justify-center md:gap-1 items-center gap-5 md:mb-5">
         <div>
           <div className="dropdown">
-            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+            <div tabIndex={0} role="button" className="btn btn-ghost md:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -131,13 +128,13 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 md:w-24 p-2 shadow"
+              className="menu menu-sm dropdown-content bg-secondaryColor rounded-box z-[10] mt-3 p-2 shadow flex flex-col lg:flex-row"
             >
               {links}
             </ul>
           </div>
         </div>
-        <div className="hidden lg:flex">
+        <div className="hidden md:flex">
           <ul className="menu menu-horizontal px-1">{links}</ul>
         </div>
         <div className="">

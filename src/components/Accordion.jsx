@@ -3,7 +3,7 @@ import faqLottie from "../assets/FAQlottie.json";
 import faq from "../assets/FAQ.json";
 const Accordion = () => {
   return (
-    <div className="space-y-2 bg-secondaryColor p-10 rounded-3xl">
+    <div className="space-y-2 bg-secondaryColor p-10 rounded-3xl m-2 w-[90%] mx-auto">
       <div className="flex justify-center flex-col items-center">
         <Lottie
           animationData={faq}

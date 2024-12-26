@@ -14,7 +14,7 @@ const RcCard = ({ recommendation, idx }) => {
               <th>{idx + 1}</th>
               <td>
                 <img
-                  className="w-28 h-24 object-cover"
+                  className="md:w-28 md:h-24 w-20 h-10 object-cover"
                   src={rc_product_photo}
                 />
               </td>
