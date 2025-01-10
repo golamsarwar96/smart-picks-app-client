@@ -18,6 +18,13 @@ const Queries = () => {
     };
     fetchAllQuery();
   }, [search]);
+
+  const handleSort = () => {
+    const sortedQueries = [...queries].sort(
+      (a, b) => b.recommendedCount - a.recommendedCount
+    );
+    setQueries(sortedQueries);
+  };
   return (
     <div className=" text-center lg:mt-32 md:mt-44 mt-24 bg-primaryColor py-10 md:px-5 pt-10">
       <div className="flex items-center justify-between flex-col md:flex-row">
@@ -35,6 +42,15 @@ const Queries = () => {
             Search
           </button>
         </div>
+        <div>
+          <button
+            onClick={handleSort}
+            className="btn bg-primaryColor text-secondaryColor"
+          >
+            Sort By Popularity
+          </button>
+        </div>
+
         {/* <div className="flex gap-2 mt-10 ">
           <button
             onClick={() => setColumn(1)}
@@ -68,7 +84,7 @@ const Queries = () => {
           {/* head */}
           <thead className="text-secondaryColor">
             <tr className="md:text-lg text-sm">
-              <th>ID</th>
+              <th>Recommended</th>
               <th>Product Image</th>
               <th>Product Name</th>
               {/* <th>Query</th> */}
@@ -93,7 +109,7 @@ const Queries = () => {
               })
               .map((query, idx) => (
                 <tr key={idx}>
-                  <th>{idx + 1}</th>
+                  <th>{query?.recommendedCount}</th>
                   <td>
                     <img
                       className="w-20 h-16 object-cover"
