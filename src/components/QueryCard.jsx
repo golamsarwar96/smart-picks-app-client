@@ -22,7 +22,7 @@ const QueryCard = ({ query }) => {
         <div className=" items-center text-center p-3">
           <h2 className="text-xl font-bold">{product_name}</h2>
           <p className="px-2 py-1 w-3/4 mx-auto bg-primaryColor text-secondaryColor mt-2 font-medium">
-            Brand : {product_brand.slice(0, 9)}...
+            Brand : {product_brand}
           </p>
           <h2 className="text-base mt-3 w-64 mx-auto font-medium">
             <span className="bg-primaryColor text-secondaryColor px-3 py-1 font-medium">

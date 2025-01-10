@@ -56,7 +56,7 @@ const MyQueries = () => {
   };
 
   return (
-    <div>
+    <div className="lg:mt-32 mt-10">
       {queries.length < 0 ? (
         <div className="flex justify-center items-center flex-col">
           <Lottie
@@ -80,9 +80,9 @@ const MyQueries = () => {
           </div>
         </div>
       ) : (
-        <div className="space-y-4 bg-queryBanner h-[700px] bg-cover md:relative">
+        <div className="space-y-4 bg-queryBanner h-[80vh] bg-cover md:relative">
           <div className="md:absolute md:right-40 md:top-64 flex md:block items-center justify-center">
-            <h1 className="text-5xl text-center font-bold w-96 mt-52 md:mt-0 ">
+            <h1 className="text-5xl lg:-mt-16 text-center font-bold w-96 mt-52 md:mt-0 ">
               You have added{" "}
               <span className="bg-primaryColor text-3xl text-secondaryColor px-3 py-2 rounded-full font-bold">
                 {queries.length}
@@ -90,7 +90,7 @@ const MyQueries = () => {
               Queries.
             </h1>
             <Link to="/add-queries">
-              <button className="absolute md:top-32 font-bold md:right-28 bottom-56 pb-10 right-32 px-10 py-4 bg-primaryColor text-secondaryColor">
+              <button className="absolute lg:top-16 md:top-32 font-bold lg:right-28 bottom-56 right-32 md:pb-10 px-10 py-4 bg-primaryColor text-secondaryColor">
                 Add Query
               </button>
             </Link>
@@ -101,30 +101,90 @@ const MyQueries = () => {
         <div>
           <div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3`}>
             {queries.map((query) => (
-              <div className="m-5">
-                <div className="card bg-base-100 w-96 shadow-xl">
-                  <figure className="p-3">
+              // <div className="m-5">
+              //   <div className="card bg-base-100 w-96 shadow-xl">
+              //     <figure className="p-3">
+              //       <img
+              //         className="w-96 rounded-xl h-80 object-cover"
+              //         src={query.product_photo}
+              //         alt="Shoes"
+              //       />
+              //     </figure>
+              //     <div className=" items-center text-center p-3">
+              //       <h2 className="text-3xl font-bold">{query.product_name}</h2>
+              //       <p className="px-3 py-2 w-1/2 mx-auto bg-primaryColor text-secondaryColor mt-2 font-medium">
+              //         Brand : {query.product_brand}
+              //       </p>
+              //       <h2 className="text-lg mt-5 w-84 mx-auto font-medium">
+              //         <span className="bg-primaryColor text-secondaryColor px-3 py-1 font-medium">
+              //           Queries:
+              //         </span>{" "}
+              //         {query.query_title}
+              //       </h2>
+              //       <p className="text-primaryColor font-normal">
+              //         Posted On :{" "}
+              //         {new Date(query.time).toISOString().split("T")[0]}
+              //       </p>
+              //       <div className="card-actions flex justify-center items-center mt-5">
+              //         <Link to={`/query/${query._id}`}>
+              //           <button className="btn bg-primaryColor text-secondaryColor rounded-3xl px-5 text-base ">
+              //             View Details
+              //           </button>
+              //         </Link>
+              //         <Link to={`/update/${query._id}`}>
+              //           <button className="btn bg-primaryColor text-secondaryColor rounded-3xl px-5 text-base ">
+              //             <svg
+              //               xmlns="http://www.w3.org/2000/svg"
+              //               fill="none"
+              //               viewBox="0 0 24 24"
+              //               strokeWidth="1.5"
+              //               stroke="currentColor"
+              //               className="w-6 h-6"
+              //             >
+              //               <path
+              //                 strokeLinecap="round"
+              //                 strokeLinejoin="round"
+              //                 d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10"
+              //               />
+              //             </svg>
+              //           </button>
+              //         </Link>
+
+              //         <button
+              //           onClick={() => handleDelete(query._id)}
+              //           className="btn bg-primaryColor text-secondaryColor  rounded-3xl px-5 text-2xl "
+              //         >
+              //           <RiDeleteBin5Fill />
+              //         </button>
+              //       </div>
+              //     </div>
+              //   </div>
+              // </div>
+              <div className="m-5 w-80 lg:ml-0 md:ml-7 ml-[2px]">
+                <div className="card bg-base-100 shadow-xl">
+                  <figure className="">
                     <img
-                      className="w-96 rounded-xl h-80 object-cover"
-                      src={query.product_photo}
+                      className=" rounded-xl h-40 object-cover w-full p-1"
+                      src={query?.product_photo}
                       alt="Shoes"
                     />
                   </figure>
                   <div className=" items-center text-center p-3">
-                    <h2 className="text-3xl font-bold">{query.product_name}</h2>
-                    <p className="px-3 py-2 w-1/2 mx-auto bg-primaryColor text-secondaryColor mt-2 font-medium">
-                      Brand : {query.product_brand}
+                    <h2 className="text-xl font-bold">
+                      {query.product_name.length > 18
+                        ? query.product_name.slice(0, 20) + "..."
+                        : query.product_name}
+                    </h2>
+                    <p className="px-2 py-1 w-3/4 mx-auto bg-primaryColor text-secondaryColor mt-2 font-medium">
+                      Brand : {query?.product_brand}
                     </p>
-                    <h2 className="text-lg mt-5 w-84 mx-auto font-medium">
+                    <h2 className="text-base mt-3 w-64 mx-auto font-medium">
                       <span className="bg-primaryColor text-secondaryColor px-3 py-1 font-medium">
                         Queries:
                       </span>{" "}
-                      {query.query_title}
+                      {query?.query_title.slice(0, 46)}...
                     </h2>
-                    <p className="text-primaryColor font-normal">
-                      Posted On :{" "}
-                      {new Date(query.time).toISOString().split("T")[0]}
-                    </p>
+
                     <div className="card-actions flex justify-center items-center mt-5">
                       <Link to={`/query/${query._id}`}>
                         <button className="btn bg-primaryColor text-secondaryColor rounded-3xl px-5 text-base ">

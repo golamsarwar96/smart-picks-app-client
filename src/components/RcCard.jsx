@@ -12,7 +12,7 @@ const RcCard = ({ recommendation, idx }) => {
             {/* row 1 */}
             <tr>
               <th>{idx + 1}</th>
-              <td>
+              <td className="lg:1/4 md:w-1/5 w-1/6">
                 <img
                   className="md:w-28 md:h-24 w-20 h-10 object-cover"
                   src={rc_product_photo}

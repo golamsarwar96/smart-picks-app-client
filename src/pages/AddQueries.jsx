@@ -55,7 +55,7 @@ const AddQueries = () => {
     }
   };
   return (
-    <div className=" bg-primaryColor py-12 px-4">
+    <div className=" bg-primaryColor py-12 px-4 lg:mt-32 md:mt-52 mt-24">
       <div className="max-w-2xl mx-auto bg-textColor rounded-lg shadow-sm p-6">
         <h2 className="text-4xl font-bold text-secondaryColor text-center mb-6">
           Add Queries
@@ -123,7 +123,7 @@ const AddQueries = () => {
           <div className="pt-4">
             <button
               type="submit"
-              className="w-full bg-cyan-950 text-amber-400 py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-cyan-800 focus:ring-offset-2"
+              className="w-full bg-primaryColor text-secondaryColor py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-cyan-800 focus:ring-offset-2"
             >
               Add Query
             </button>

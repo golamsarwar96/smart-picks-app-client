@@ -17,7 +17,7 @@ const Recommendations = () => {
     fetchAllRecommendations();
   }, []);
   return (
-    <div className="bg-primaryColor">
+    <div className="bg-primaryColor lg:mt-32 md:mt-56 mt-24">
       <h1 className="md:text-5xl text-3xl py-5 text-center text-secondaryColor font-bold ">
         Recommendations For You
       </h1>
