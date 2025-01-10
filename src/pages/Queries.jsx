@@ -42,7 +42,7 @@ const Queries = () => {
             Search
           </button>
         </div>
-        <div>
+        <div className="mt-10">
           <button
             onClick={handleSort}
             className="btn bg-primaryColor text-secondaryColor"
@@ -84,7 +84,7 @@ const Queries = () => {
           {/* head */}
           <thead className="text-secondaryColor">
             <tr className="md:text-lg text-sm">
-              <th>Recommended</th>
+              <th>REC</th>
               <th>Product Image</th>
               <th>Product Name</th>
               {/* <th>Query</th> */}

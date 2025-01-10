@@ -10,8 +10,8 @@ const Blogs = () => {
   }, []);
 
   return (
-    <div className="w-[97%] mx-auto px-1">
-      <h1 className="text-5xl text-center font-bold text-primaryColor my-16">
+    <div className="w-[97%] mx-auto px-1 ">
+      <h1 className="text-5xl text-center font-bold text-primaryColor my-10">
         Read Latest Blogs
       </h1>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 items-center justify-center lg:pl-16">

@@ -1,6 +1,7 @@
 import Lottie from "lottie-react";
 import newsletterLottie from "../assets/newsletterLottie.json";
 import { FaPaperPlane } from "react-icons/fa";
+import { Link } from "react-router-dom";
 const Newsletter = () => {
   return (
     <div className="bg-primaryColor flex flex-col lg:flex-row justify-evenly items-center text-secondaryColor w-[97%] mx-auto rounded-3xl pb-5 mb-16 lg:h-[70vh]">
@@ -29,9 +30,11 @@ const Newsletter = () => {
           />
         </div>
         <div className="flex items-center justify-center mt-5">
-          <button className="px-10 py-3 bg-secondaryColor text-xl text-primaryColor font-bold rounded-xl flex items-center gap-4">
-            Subscribe <FaPaperPlane />
-          </button>
+          <Link to="https://mail.google.com/mail/u/0/#inbox">
+            <button className="px-10 py-3 bg-secondaryColor text-xl text-primaryColor font-bold rounded-xl flex items-center gap-4">
+              Subscribe <FaPaperPlane />
+            </button>
+          </Link>
         </div>
         <p className="text-base text-center my-3">
           We respect your privacy. Unsubscribe at any time.
