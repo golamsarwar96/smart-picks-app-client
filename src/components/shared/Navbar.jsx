@@ -15,8 +15,8 @@ const Navbar = () => {
           <NavLink
             className={({ isActive }) =>
               isActive
-                ? "flex gap-3 px-4 py-2 bg-[#25302c] text-[#D6BD98]  border-none  lg:items-center flex-col lg:flex-row "
-                : "flex gap-3 px-4 py-2 hover:bg-[#25302c] hover:text-[#D6BD98]  border-none  lg:items-center flex-col lg:flex-row  text-[#25302c]"
+                ? "flex gap-3 px-4 py-2 bg-secondaryColor text-primaryColor  border-none  lg:items-center flex-col lg:flex-row "
+                : "flex gap-3 px-4 py-2 hover:bg-[#25302c] hover:text-[#D6BD98]  border-none  lg:items-center flex-col lg:flex-row  text-secondaryColor"
             }
             to="/"
           >
@@ -27,8 +27,8 @@ const Navbar = () => {
             to="/add-queries"
             className={({ isActive }) =>
               isActive
-                ? "flex gap-3 px-4 py-2 bg-[#25302c] text-[#D6BD98]  border-none  lg:items-center flex-col lg:flex-row "
-                : "flex gap-3 px-4 py-2 hover:bg-[#25302c] hover:text-[#D6BD98]  border-none  lg:items-center flex-col lg:flex-row  text-[#25302c]"
+                ? "flex gap-3 px-4 py-2 bg-secondaryColor text-primaryColor  border-none  lg:items-center flex-col lg:flex-row "
+                : "flex gap-3 px-4 py-2 hover:bg-[#25302c] hover:text-[#D6BD98]  border-none  lg:items-center flex-col lg:flex-row  text-secondaryColor"
             }
           >
             Add Queries
@@ -37,8 +37,8 @@ const Navbar = () => {
             to="/queries"
             className={({ isActive }) =>
               isActive
-                ? "flex gap-3 px-4 py-2 bg-[#25302c] text-[#D6BD98]  border-none  lg:items-center flex-col lg:flex-row "
-                : "flex gap-3 px-4 py-2 hover:bg-[#25302c] hover:text-[#D6BD98]  border-none  lg:items-center flex-col lg:flex-row  text-[#25302c]"
+                ? "flex gap-3 px-4 py-2 bg-secondaryColor text-primaryColor  border-none  lg:items-center flex-col lg:flex-row "
+                : "flex gap-3 px-4 py-2 hover:bg-[#25302c] hover:text-[#D6BD98]  border-none  lg:items-center flex-col lg:flex-row  text-secondaryColor"
             }
           >
             Queries
@@ -47,8 +47,8 @@ const Navbar = () => {
             to="/recommendations"
             className={({ isActive }) =>
               isActive
-                ? "flex gap-3 px-4 py-2 bg-[#25302c] text-[#D6BD98]  border-none  lg:items-center flex-col lg:flex-row "
-                : "flex gap-3 px-4 py-2 hover:bg-[#25302c] hover:text-[#D6BD98]  border-none  lg:items-center flex-col lg:flex-row  text-[#25302c]"
+                ? "flex gap-3 px-4 py-2 bg-secondaryColor text-primaryColor  border-none  lg:items-center flex-col lg:flex-row "
+                : "flex gap-3 px-4 py-2 hover:bg-[#25302c] hover:text-[#D6BD98]  border-none  lg:items-center flex-col lg:flex-row  text-secondaryColor"
             }
           >
             Recommendations For Me
@@ -57,8 +57,8 @@ const Navbar = () => {
             to="/my-queries"
             className={({ isActive }) =>
               isActive
-                ? "flex gap-3 px-4 py-2 bg-[#25302c] text-[#D6BD98]  border-none  lg:items-center flex-col lg:flex-row "
-                : "flex gap-3 px-4 py-2 hover:bg-[#25302c] hover:text-[#D6BD98]  border-none  lg:items-center flex-col lg:flex-row  text-[#25302c]"
+                ? "flex gap-3 px-4 py-2 bg-secondaryColor text-primaryColor  border-none  lg:items-center flex-col lg:flex-row "
+                : "flex gap-3 px-4 py-2 hover:bg-[#25302c] hover:text-[#D6BD98]  border-none  lg:items-center flex-col lg:flex-row  text-secondaryColor"
             }
           >
             My Queries
@@ -66,8 +66,8 @@ const Navbar = () => {
           <NavLink
             className={({ isActive }) =>
               isActive
-                ? "flex gap-3 px-4 py-2 bg-[#25302c] text-[#D6BD98]  border-none  lg:items-center flex-col lg:flex-row "
-                : "flex gap-3 px-4 py-2 hover:bg-[#25302c] hover:text-[#D6BD98]  border-none  lg:items-center flex-col lg:flex-row  text-[#25302c]"
+                ? "flex gap-3 px-4 py-2 bg-secondaryColor text-primaryColor  border-none  lg:items-center flex-col lg:flex-row "
+                : "flex gap-3 px-4 py-2 hover:bg-[#25302c] hover:text-[#D6BD98]  border-none  lg:items-center flex-col lg:flex-row  text-secondaryColor"
             }
             to="/my-recommendations"
           >
@@ -79,8 +79,8 @@ const Navbar = () => {
           <NavLink
             className={({ isActive }) =>
               isActive
-                ? "flex gap-3 px-4 py-2 bg-[#25302c] text-[#D6BD98]  border-none  lg:items-center flex-col lg:flex-row "
-                : "flex gap-3 px-4 py-2 hover:bg-[#25302c] hover:text-[#D6BD98]  border-none  lg:items-center flex-col lg:flex-row  text-[#25302c]"
+                ? "flex gap-3 px-4 py-2 bg-secondaryColor text-primaryColor  border-none  lg:items-center flex-col lg:flex-row "
+                : "flex gap-3 px-4 py-2 hover:bg-[#25302c] hover:text-[#D6BD98]  border-none  lg:items-center flex-col lg:flex-row  text-secondaryColor"
             }
             to="/"
           >
@@ -90,8 +90,8 @@ const Navbar = () => {
             to="/queries"
             className={({ isActive }) =>
               isActive
-                ? "flex gap-3 px-4 py-2 bg-[#25302c] text-[#D6BD98]  border-none  lg:items-center flex-col lg:flex-row "
-                : "flex gap-3 px-4 py-2 hover:bg-[#25302c] hover:text-[#D6BD98]  border-none  lg:items-center flex-col lg:flex-row  text-[#25302c]"
+                ? "flex gap-3 px-4 py-2 bg-secondaryColor text-primaryColor  border-none  lg:items-center flex-col lg:flex-row "
+                : "flex gap-3 px-4 py-2 hover:bg-[#25302c] hover:text-[#D6BD98]  border-none  lg:items-center flex-col lg:flex-row  text-secondaryColor"
             }
           >
             Queries
@@ -101,9 +101,9 @@ const Navbar = () => {
     </div>
   );
   return (
-    <div className="bg-secondaryColor p-2">
+    <div className="bg-primaryColor fixed z-10  max-w-screen-2xl w-full top-0">
       <div className="flex items-center justify-center p-3">
-        <a className="font-jost md:text-5xl text-4xl text-textColor flex items-center gap-2 font-extrabold ">
+        <a className="font-jost md:text-4xl text-3xl text-secondaryColor flex items-center gap-2 font-extrabold ">
           <IoBagHandleSharp /> <i>Smart Picks</i> <IoBagHandleSharp />
         </a>
       </div>
@@ -113,7 +113,7 @@ const Navbar = () => {
             <div tabIndex={0} role="button" className="btn btn-ghost md:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
+                className="h-5 w-5 text-secondaryColor"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -128,14 +128,14 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content bg-secondaryColor rounded-box z-[10] mt-3 p-2 shadow flex flex-col lg:flex-row"
+              className="menu menu-sm dropdown-content bg-primaryColor text-secondaryColor rounded-box z-[10] shadow flex flex-col lg:flex-row"
             >
               {links}
             </ul>
           </div>
         </div>
         <div className="hidden md:flex">
-          <ul className="menu menu-horizontal px-1">{links}</ul>
+          <ul className="menu menu-horizontal px-10">{links}</ul>
         </div>
         <div className="">
           {user && user?.email ? (
@@ -147,7 +147,7 @@ const Navbar = () => {
                 src={user?.photoURL}
               />
               <button
-                className="md:px-4 md:py-2 px-2 py-1 bg-[#25302c] text-[#D6BD98]"
+                className="md:px-4 md:py-2 px-2 py-1 bg-secondaryColor text-primaryColor"
                 onClick={logOut}
               >
                 Logout
@@ -156,7 +156,7 @@ const Navbar = () => {
           ) : (
             <Link
               to="/login"
-              className="md:px-4 md:py-2 px-2 py-1 bg-[#25302c] text-[#D6BD98]"
+              className="md:px-4 md:py-2 px-2 py-1 bg-secondaryColor text-primaryColor"
             >
               Login
             </Link>
