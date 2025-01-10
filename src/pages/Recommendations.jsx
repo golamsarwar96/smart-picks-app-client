@@ -18,7 +18,7 @@ const Recommendations = () => {
   }, []);
   return (
     <div className="bg-primaryColor lg:mt-32 md:mt-56 mt-24">
-      <h1 className="md:text-5xl text-3xl py-5 text-center text-secondaryColor font-bold ">
+      <h1 className="md:text-5xl text-3xl py-5 text-center text-secondaryColor font-bold md:mb-10 mb-5 ">
         Recommendations For You
       </h1>
       <div className="text-secondaryColor text-xl font-semibold flex justify-between gap-4 md:gap-0 text-center md:text-left px-7 pb-5">

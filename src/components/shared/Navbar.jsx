@@ -11,7 +11,7 @@ const Navbar = () => {
   const links = (
     <div className="flex gap-2 items-center">
       {user && user?.email ? (
-        <div className="flex flex-col md:flex-row text-left md:items-center gap-2 text-black  font-semibold rounded-3xl">
+        <div className="flex flex-col md:flex-row text-left md:items-center gap-2 text-black  font-semibold rounded-3xl md:px-6">
           <NavLink
             className={({ isActive }) =>
               isActive
@@ -134,8 +134,8 @@ const Navbar = () => {
             </ul>
           </div>
         </div>
-        <div className="hidden md:flex">
-          <ul className="menu menu-horizontal">{links}</ul>
+        <div className="hidden md:flex ">
+          <ul className="menu menu-horizontal ">{links}</ul>
         </div>
         <div className="">
           {user && user?.email ? (

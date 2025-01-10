@@ -41,14 +41,14 @@ const Register = () => {
       });
   };
   return (
-    <div className="flex flex-col-reverse lg:flex-row justify-center items-center gap-20 bg-secondaryColor">
+    <div className="flex flex-col-reverse lg:flex-row justify-center items-center gap-40 bg-secondaryColor lg:mt-32 md:mt-48 mt-24 ">
       <div>
         <Lottie animationData={login3}></Lottie>
       </div>
       <div className="card bg-base-100 w-full max-w-sm flex justify-center shadow-2xl">
         <form
           onSubmit={handleRegister}
-          className="card-body bg-primaryColor text-secondaryColor"
+          className="card-body bg-primaryColor text-secondaryColor "
         >
           <h1 className="text-5xl text-center font-bold">
             REGISTER TO SMART PICKS

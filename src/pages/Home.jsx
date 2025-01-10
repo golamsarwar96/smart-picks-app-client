@@ -1,5 +1,6 @@
 import Accordion from "../components/Accordion";
 import Banner from "../components/Banner";
+import Blogs from "../components/Blogs";
 import Newsletter from "../components/Newsletter";
 import QueryCards from "../components/QueryCards";
 
@@ -9,6 +10,7 @@ const Home = () => {
       <Banner></Banner>
       <QueryCards></QueryCards>
       <Newsletter></Newsletter>
+      <Blogs></Blogs>
       <Accordion></Accordion>
     </div>
   );

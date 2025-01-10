@@ -50,12 +50,9 @@ const Login = () => {
     //   });
   };
   return (
-    <div className="flex flex-col-reverse lg:flex-row justify-center items-center gap-20 bg-secondaryColor">
+    <div className="flex flex-col-reverse lg:flex-row justify-center items-center gap-20 bg-secondaryColor lg:md-52 mt-24">
       <div className="p-5">
-        <Lottie
-          animationData={login1}
-          style={{ width: "600px", height: "600px" }}
-        ></Lottie>
+        <Lottie animationData={login1} className=""></Lottie>
       </div>
       <div className="card bg-base-100 w-full max-w-sm shadow-2xl">
         <form

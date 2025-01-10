@@ -31,7 +31,7 @@ const Banner = () => {
             src={banner1}
             alt="Image 1"
           />
-          <h1 className="font-semibold lg:text-5xl md:text-2xl text-xl absolute lg:w-1/2 md:w-3/4 w-[60%] mx-auto lg:left-96 md:left-24 left-20 md:top-32 top-28 lg:top-36 text-center bg-[#25302c] text-[#fce4c1] p-8">
+          <h1 className="font-semibold lg:text-5xl md:text-2xl text-2xl absolute lg:w-1/2 md:w-3/4 w-[60%] mx-auto lg:left-96 md:left-24 left-20 md:top-44 top-40 lg:top-52 text-center bg-[#25302c] text-[#fce4c1] p-8">
             Get The Best Product Recommendation For Your Next Purchase
           </h1>
         </SwiperSlide>
@@ -41,7 +41,7 @@ const Banner = () => {
             src={banner2}
             alt="Image 1"
           />
-          <h1 className="font-semibold lg:text-5xl md:text-2xl text-xl absolute lg:w-1/2 md:w-3/4 w-[60%] mx-auto lg:left-96 md:left-24 left-20 md:top-32 top-28 lg:top-36 text-center bg-primaryColor text-secondaryColor p-8">
+          <h1 className="font-semibold lg:text-5xl md:text-2xl text-2xl absolute lg:w-1/2 md:w-3/4 w-[60%] mx-auto lg:left-96 md:left-24 left-20 md:top-44 top-40 lg:top-52 text-center bg-primaryColor text-secondaryColor p-8">
             Get The Best Product Recommendation For Your Next Purchase
           </h1>
         </SwiperSlide>
@@ -51,7 +51,7 @@ const Banner = () => {
             src={banner3}
             alt="Image 1"
           />
-          <h1 className="font-semibold lg:text-5xl md:text-2xl text-xl absolute lg:w-1/2 md:w-3/4 w-[60%] mx-auto lg:left-96 md:left-24 left-20 md:top-32 top-28 lg:top-36 text-center bg-primaryColor text-secondaryColor p-8">
+          <h1 className="font-semibold lg:text-5xl md:text-2xl text-2xl absolute lg:w-1/2 md:w-3/4 w-[60%] mx-auto lg:left-96 md:left-24 left-20 md:top-44 top-40 lg:top-52 text-center bg-primaryColor text-secondaryColor p-8">
             Get The Best Product Recommendation For Your Next Purchase
           </h1>
         </SwiperSlide>
