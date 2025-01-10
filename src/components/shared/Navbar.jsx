@@ -101,7 +101,7 @@ const Navbar = () => {
     </div>
   );
   return (
-    <div className="bg-primaryColor fixed z-10  max-w-screen-2xl w-full top-0">
+    <div className="bg-primaryColor fixed z-10  max-w-screen-2xl w-full top-0 mx-auto">
       <div className="flex items-center justify-center p-3">
         <a className="font-jost md:text-4xl text-3xl text-secondaryColor flex items-center gap-2 font-extrabold ">
           <IoBagHandleSharp /> <i>Smart Picks</i> <IoBagHandleSharp />
@@ -135,7 +135,7 @@ const Navbar = () => {
           </div>
         </div>
         <div className="hidden md:flex">
-          <ul className="menu menu-horizontal px-10">{links}</ul>
+          <ul className="menu menu-horizontal">{links}</ul>
         </div>
         <div className="">
           {user && user?.email ? (

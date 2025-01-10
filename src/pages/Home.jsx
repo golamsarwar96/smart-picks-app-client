@@ -5,7 +5,7 @@ import QueryCards from "../components/QueryCards";
 
 const Home = () => {
   return (
-    <div className="mb-20">
+    <div className="mb-20 max-w-screen-2xl mx-auto">
       <Banner></Banner>
       <QueryCards></QueryCards>
       <Newsletter></Newsletter>

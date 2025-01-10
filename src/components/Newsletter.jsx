@@ -3,7 +3,7 @@ import newsletterLottie from "../assets/newsletterLottie.json";
 import { FaPaperPlane } from "react-icons/fa";
 const Newsletter = () => {
   return (
-    <div className="bg-primaryColor flex flex-col justify-center items-center text-secondaryColor w-[90%] mx-auto mb-10 rounded-3xl m-2">
+    <div className="bg-primaryColor flex flex-col lg:flex-row justify-evenly items-center text-secondaryColor w-[97%] mx-auto rounded-3xl pb-5 mb-16 lg:h-[70vh]">
       <div className="">
         <Lottie
           animationData={newsletterLottie}
@@ -16,9 +16,9 @@ const Newsletter = () => {
           }}
         ></Lottie>
       </div>
-      <div className="mb-16">
+      <div className="">
         <h1 className="text-5xl font-bold text-center">Stay Updated</h1>
-        <p className="text-xl text-center my-3">
+        <p className="text-xl text-center my-3 w-3/4 md:w-full mx-auto">
           Get the latest updates straight to your inbox.
         </p>
         <div className="flex justify-center">

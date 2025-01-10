@@ -9,7 +9,7 @@ import banner2 from "../assets/bannerImg/slider2.jpg";
 import banner3 from "../assets/bannerImg/slider1.jpg";
 const Banner = () => {
   return (
-    <div className="lg:mt-32 mt-24 md:mt-[228px] h-[60vh]">
+    <div className="lg:mt-32 mt-24 md:mt-[192px] h-[60vh]">
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
