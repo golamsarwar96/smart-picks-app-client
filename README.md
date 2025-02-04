@@ -1,4 +1,8 @@
-# Project Name : Smart Picks 📦
+<div align="center">
+  <img src="https://i.ibb.co.com/NdFqdpQY/smartpicksss.png" alt="smartpicks ss" />
+</div>
+
+# Project Name: Smart Picks 📦
 
 "Smart Picks" is a Product Recommendation Platform designed to assist users in making informed choices about various products. Users can interact with the system by posting queries, providing recommendations, and sharing insights about alternative products. The platform fosters a collaborative environment where users contribute to a shared knowledge base.
 
@@ -42,31 +46,29 @@ View Queries: Users can browse queries submitted by others and view details abou
 
 ## Run On Your Machine 
 
-1. Clone Repository
-   • Click on the green "Code" button. <br/>
-   • Copy the HTTPS URL. <br/>
-   • Open your terminal or command prompt and navigate to the directory where you want to clone the project. <br/>
+## Installation
 
-     git clone https://github.com/golamsarwar96/smart-picks-app-client.git <br/>
+### **1. Clone the Repository**  
+```sh
+git clone https://github.com/golamsarwar96/smart-picks-app-client.git
+```
+### **2. Install Dependencies**
 
-   • Navigate into the project folder: <br/>
+```sh
+npm install
+```
+### **3. Environment Configuration**
+Create a .env file in the project root and add the following environment variables <br/>
 
-     cd project-name <br/>
+```sh
+REACT_APP_API_URL=<Your API URL>
+REACT_APP_FIREBASE_API_KEY=<Your Firebase API Key>
+```
 
-2. Install Dependencies <br/>
-   • Check package.json <br/>
-   • Run the command <br/>
-
-     npm install <br/>
-
-   • Check Configuration Files: <br/>
-     Review environment files like .env for any necessary API keys or database credentials. <br/>
-
-3. Run The Project <br/>
-   • Run the command <br/>
-
-     npm run dev <br/>
-
+### **4. Run the Project**
+```sh
+npm run dev
+```
 
 ## LIVE LINK: 🌐
 
