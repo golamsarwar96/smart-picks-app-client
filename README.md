@@ -6,7 +6,7 @@
 
 "Smart Picks" is a Product Recommendation Platform designed to assist users in making informed choices about various products. Users can interact with the system by posting queries, providing recommendations, and sharing insights about alternative products. The platform fosters a collaborative environment where users contribute to a shared knowledge base.
 
-#Features
+# Features
 
 ## User Queries
 
