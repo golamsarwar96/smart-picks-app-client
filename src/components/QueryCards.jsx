@@ -18,10 +18,10 @@ const QueryCards = () => {
   return (
     <div className="lg:mt-36 mt-32 text-center">
       <div className="space-y-4">
-        <h1 className="text-5xl font-bold text-primaryColor">
+        <h1 className="text-5xl font-bold text-primaryColor ">
           Pick From Our Feature Page
         </h1>
-        <p className="w-[80%] mx-auto font-semibold">
+        <p className="w-[80%] mx-auto font-semibold text-primaryColor ">
           We offer you the best products and best recommendation so that you
           don't have to worry about your next purchase.
         </p>

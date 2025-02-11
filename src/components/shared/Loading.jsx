@@ -1,11 +1,11 @@
 import Lottie from "lottie-react";
-import loadingAnimation from "../../assets/loadingAnim.json";
+import loadingAnimation from "../../assets/loop.json";
 const Loading = () => {
   return (
-    <div className="flex justify-center items-center md:mt-[180px]">
+    <div className="flex justify-center items-center md:mt-[210px]">
       <Lottie
         animationData={loadingAnimation}
-        style={{ width: "350px", height: "350px" }}
+        style={{ width: "200px", height: "200px" }}
         autoplay={true}
         loop={true}
       ></Lottie>
