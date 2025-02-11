@@ -27,7 +27,7 @@ const Queries = () => {
   };
   return (
     <div className=" text-center lg:mt-32 md:mt-44 mt-24 bg-primaryColor py-10 md:px-5 pt-10">
-      <div className="flex items-center justify-between flex-col md:flex-row">
+      <div className="flex items-center justify-between flex-col md:flex-row px-6">
         <div className="mt-10 flex p-2 overflow-hidden border rounded-lg max-w-min focus-within:ring focus-within:ring-opacity-40 focus-within:border-primaryColor focus-within:ring-secondaryColor">
           <input
             className="px-6 py-2 text-gray-700 placeholder-gray-500 bg-white outline-none focus:placeholder-transparent"
@@ -79,20 +79,20 @@ const Queries = () => {
             ? "grid-cols-2"
             : "grid-cols-1"
         } gap-3 my-12 md:grid-col-2 grid-cols-1`} */}
-      <div className="my-12 bg-primaryColor">
-        <table className="table">
-          {/* head */}
-          <thead className="text-secondaryColor">
+      <div className="my-12 bg-primaryColor grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+        {/* <table className="table"> */}
+        {/* head */}
+        {/* <thead className="text-secondaryColor">
             <tr className="md:text-lg text-sm">
               <th>REC</th>
               <th>Product Image</th>
-              <th>Product Name</th>
-              {/* <th>Query</th> */}
-              {/* <th>Recommended</th>
+              <th>Product Name</th> */}
+        {/* <th>Query</th> */}
+        {/* <th>Recommended</th>
               <th>Brand</th>
               <th>Posted At</th> */}
 
-              <th>Actions</th>
+        {/* <th>Actions</th>
             </tr>
           </thead>
           <tbody className="text-secondaryColor text-sm">
@@ -116,16 +116,16 @@ const Queries = () => {
                       src={query?.product_photo}
                     />
                   </td>
-                  <td>{query?.product_name}</td>
-                  {/* <td>{query?.query_title}</td> */}
-                  {/* <td>{query?.recommendedCount} times</td>
+                  <td>{query?.product_name}</td> */}
+        {/* <td>{query?.query_title}</td> */}
+        {/* <td>{query?.recommendedCount} times</td>
                   <td>{query?.product_brand}</td>
                   <td>
                     <p className=" font-normal">
                       {new Date(query?.time).toISOString().split("T")[0]}
                     </p>
                   </td> */}
-                  <td>
+        {/* <td>
                     <Link to={`/query/${query?._id}`}>
                       <button className="btn bg-primaryColor text-secondaryColor rounded-3xl md:px-7 px-2 text-xs ">
                         Recommend
@@ -135,8 +135,8 @@ const Queries = () => {
                 </tr>
               ))}
           </tbody>
-        </table>
-        {/* {queries
+        </table> */}
+        {queries
           .filter((query) => {
             return search.toLowerCase() === ""
               ? true
@@ -149,7 +149,7 @@ const Queries = () => {
           })
           .map((query) => (
             <AllQueryCard key={query._id} query={query}></AllQueryCard>
-          ))} */}
+          ))}
       </div>
     </div>
   );
