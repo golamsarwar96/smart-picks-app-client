@@ -90,7 +90,7 @@ const MyQueries = () => {
               Queries.
             </h1>
             <Link to="/add-queries">
-              <button className="absolute lg:top-16 md:top-32 font-bold lg:right-28 bottom-56 right-32 md:pb-10 px-10 py-4 bg-primaryColor text-secondaryColor">
+              <button className="absolute lg:top-16 md:top-32 font-bold lg:right-28 bottom-56 right-32 md:pb-10 px-10 py-4 border-2 border-primaryColor text-primaryColor ">
                 Add Query
               </button>
             </Link>
@@ -187,12 +187,12 @@ const MyQueries = () => {
 
                     <div className="card-actions flex justify-center items-center mt-5">
                       <Link to={`/query/${query._id}`}>
-                        <button className="btn bg-primaryColor text-secondaryColor rounded-3xl px-5 text-base ">
+                        <button className="bg-primaryColor btn cursor-pointer text-secondaryColor rounded-3xl px-5 text-base">
                           View Details
                         </button>
                       </Link>
                       <Link to={`/update/${query._id}`}>
-                        <button className="btn bg-primaryColor text-secondaryColor rounded-3xl px-5 text-base ">
+                        <button className="cursor-pointer btn border-2 border-primaryColor text-primaryColor rounded-3xl px-5 text-base font-bold ">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
@@ -212,7 +212,7 @@ const MyQueries = () => {
 
                       <button
                         onClick={() => handleDelete(query._id)}
-                        className="btn bg-primaryColor text-secondaryColor  rounded-3xl px-5 text-2xl "
+                        className="cursor-pointer btn border-2 border-primaryColor text-primaryColor  rounded-3xl px-5 text-2xl "
                       >
                         <RiDeleteBin5Fill />
                       </button>
