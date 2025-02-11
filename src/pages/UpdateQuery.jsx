@@ -67,7 +67,7 @@ const UpdateQuery = () => {
     }
   };
   return (
-    <div className=" bg-primaryColor py-12 px-4">
+    <div className=" bg-primaryColor md:py-32 lg:py-20 py-10 px-4 md:mt-32 mt-24">
       <div className="max-w-2xl mx-auto bg-textColor rounded-lg shadow-sm p-6">
         <h2 className="text-4xl font-bold text-secondaryColor text-center mb-6">
           Update Queries
