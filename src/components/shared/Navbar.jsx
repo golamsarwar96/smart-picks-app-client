@@ -103,9 +103,12 @@ const Navbar = () => {
   return (
     <div className="bg-primaryColor fixed z-10  max-w-screen-2xl w-full top-0 mx-auto">
       <div className="flex items-center justify-center p-3">
-        <a className="font-jost md:text-4xl text-3xl text-secondaryColor flex items-center gap-2 font-extrabold ">
+        <Link
+          to="/"
+          className="font-jost md:text-4xl text-3xl text-secondaryColor flex items-center gap-2 font-extrabold "
+        >
           <IoBagHandleSharp /> <i>Smart Picks</i> <IoBagHandleSharp />
-        </a>
+        </Link>
       </div>
       <div className="flex md:flex-col lg:flex-row justify-center md:gap-1 items-center gap-5 md:mb-5">
         <div>
