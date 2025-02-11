@@ -4,7 +4,7 @@ import { FaPaperPlane } from "react-icons/fa";
 import { Link } from "react-router-dom";
 const Newsletter = () => {
   return (
-    <div className="bg-primaryColor flex flex-col lg:flex-row justify-evenly items-center text-secondaryColor w-[97%] mx-auto rounded-3xl pb-5 mb-16 lg:h-[70vh]">
+    <div className="bg-primaryColor flex flex-col lg:flex-row justify-evenly items-center text-secondaryColor lg:w-full w-[95%] mx-auto rounded-3xl pb-5 mt-16 mb-16 lg:h-[70vh]">
       <div className="">
         <Lottie
           animationData={newsletterLottie}

@@ -16,7 +16,7 @@ const QueryCards = () => {
     fetchAllQuery();
   }, []);
   return (
-    <div className="lg:mt-32 mt-32 text-center">
+    <div className="lg:mt-36 mt-32 text-center">
       <div className="space-y-4">
         <h1 className="text-5xl font-bold text-primaryColor">
           Pick From Our Feature Page
