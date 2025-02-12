@@ -12,6 +12,7 @@ import PrivateRoute from "./PrivateRoute";
 import UpdateQuery from "../pages/UpdateQuery";
 import QueryDetails from "../components/QueryDetails";
 import ErrorPage from "../pages/ErrorPage";
+import AboutUs from "../pages/AboutUs";
 
 const router = createBrowserRouter([
   {
@@ -71,6 +72,10 @@ const router = createBrowserRouter([
   {
     path: "*",
     element: <ErrorPage></ErrorPage>,
+  },
+  {
+    path: "/about-us",
+    element: <AboutUs></AboutUs>,
   },
 ]);
 export default router;

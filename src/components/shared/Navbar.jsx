@@ -96,6 +96,16 @@ const Navbar = () => {
           >
             Queries
           </NavLink>
+          <NavLink
+            to="/about-us"
+            className={({ isActive }) =>
+              isActive
+                ? "flex gap-3 px-4 py-2 bg-secondaryColor text-primaryColor  border-none  lg:items-center flex-col lg:flex-row "
+                : "flex gap-3 px-4 py-2 hover:bg-[#25302c] hover:text-[#D6BD98]  border-none  lg:items-center flex-col lg:flex-row  text-secondaryColor"
+            }
+          >
+            About Us
+          </NavLink>
         </div>
       )}
     </div>
